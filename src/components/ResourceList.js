@@ -4,7 +4,7 @@ export default class ResourceList extends Component {
     render() {
         return (
             <div>
-                ResourceList
+                {this.props.resource}
             </div>
         )
     }
