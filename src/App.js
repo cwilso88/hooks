@@ -5,10 +5,10 @@ const App = () => {
     return (
       <div className="App">
         <div>
-          <button onClick={() => this.setState({ resource: 'posts'})}>Posts</button>
-          <button onClick={() => this.setState({ resource: 'todos'})}>ToDos</button>
+          <button onClick={() => setResource('posts')}>Posts</button>
+          <button onClick={() => setResource('todos')}>ToDos</button>
         </div>
-        {this.state.resource}
+        {resource}
       </div>
     );
 }
