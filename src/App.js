@@ -8,7 +8,7 @@ const App = () => {
           <button onClick={() => setResource('posts')}>Posts</button>
           <button onClick={() => setResource('todos')}>ToDos</button>
         </div>
-        {resource}
+        I want the {resource}
       </div>
     );
 }
