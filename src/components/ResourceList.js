@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-export default class ResourceList extends Component {
+class ResourceList extends Component {
     state = { resources: [] };
+
     async componentDidMount() {
         const response = await axios.get(`https://jsonplaceholder.typicode.com/${this.props.resource}`);
 
@@ -16,3 +17,5 @@ export default class ResourceList extends Component {
         )
     }
 }
+
+export default ResourceList;
