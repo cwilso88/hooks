@@ -7,8 +7,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <div>
-          <button className="">Posts</button>
-          <button className="">ToDos</button>
+          <button onClick={() => this.setState({ resource: 'posts'})}>Posts</button>
+          <button onClick={() => this.setState({ resource: 'todos'})}>ToDos</button>
         </div>
         {this.state.resource}
       </div>
